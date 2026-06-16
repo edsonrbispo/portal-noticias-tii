@@ -22,7 +22,7 @@
             <nav class="text-sm font-medium flex gap-6">
                 <a href="{{ route('home') }}" class="text-slate-600 hover:text-blue-600 py-2">Home</a>
                 <a href="{{ route('contato') }}" class="text-slate-600 hover:text-blue-600 py-2">Contato</a>
-                <a href="#" class="py-2 bg-blue-500 px-2 text-white rounded-sm">Login</a>
+                <a href="{{ route('login') }}" class="py-2 bg-blue-500 px-2 text-white rounded-sm">Login</a>
             </nav>
         </div>
     </header>
