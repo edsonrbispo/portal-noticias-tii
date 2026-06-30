@@ -18,6 +18,9 @@
                     <x-nav-link :href="route('admin.noticias.index')" :active="request()->routeIs('admin.noticias.index')">
                         Notícias
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.categorias.index')" :active="request()->routeIs('admin.categorias.index')">
+                        Categorias
+                    </x-nav-link>
                 </div>
             </div>
 

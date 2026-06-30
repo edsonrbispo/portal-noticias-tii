@@ -3,20 +3,20 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Noticia;
+use App\Models\Categoria;
 use Illuminate\Http\Request;
 
-class NoticiaController extends Controller
+class CategoriaController extends Controller
 {
     /**
      * Lista as Notícias do Banco
      */
     public function index()
     {
-        $noticias = Noticia::all();
+        $categorias = Categoria::all();
 
-        return view('admin.noticias.index',[
-            'noticias' => $noticias
+        return view('admin.categorias.index',[
+            'categorias' => $categorias
         ]);
 
        
@@ -27,7 +27,7 @@ class NoticiaController extends Controller
      */
     public function create()
     {
-       return view("admin.noticias.cadastrar");
+        //
     }
 
     /**
@@ -43,7 +43,7 @@ class NoticiaController extends Controller
      */
     public function edit(string $id)
     {
-        return view("admin.noticias.editar");
+        //
     }
 
     /**
@@ -59,6 +59,6 @@ class NoticiaController extends Controller
      */
     public function destroy(string $id)
     {
-        return "Funcionou...Deletou o registro!";
+        //
     }
 }
