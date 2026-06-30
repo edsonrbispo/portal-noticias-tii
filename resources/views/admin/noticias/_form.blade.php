@@ -43,5 +43,5 @@
 <div class="mb-5">
     <button type="submit" class="bg-slate-950 text-white px-4 py-2 rounded">Salvar</button>
     <a href="{{ route('admin.noticias.index') }}"
-        class="bg-slate-200 text-slate-800 px-4 py-2 rounded inline-block">Cancelar</a>
+        class="bg-slate-200 text-slate-800 px-4 py-2 rounded inline-block">Cancelard</a>
 </div>
