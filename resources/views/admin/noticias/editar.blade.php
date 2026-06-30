@@ -18,7 +18,7 @@
 
                 <div class="p-6 overflow-x-auto">
 
-                    <form action="#" method="post">
+                    <form action="###" method="post">
 
                         @include('admin.noticias._form')
 
