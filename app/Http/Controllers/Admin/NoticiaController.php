@@ -128,6 +128,8 @@ class NoticiaController extends Controller
      */
     public function destroy(string $id)
     {
-        return "Funcionou...Deletou o registro!";
+       $noticia = Noticia::findOrFail($id);
+       $noticia->delete();
+       return redirect()->route('admin.noticias.index');
     }
 }
