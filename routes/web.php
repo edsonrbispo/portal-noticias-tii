@@ -28,6 +28,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard/noticias/editar/{id}', [NoticiaController::class, "edit"])->name('admin.noticias.editar');
 
+    Route::put('/dashboard/noticias/atualizar/{id}', [NoticiaController::class, "update"])->name('admin.noticias.atualizar');
+
     Route::delete('/dashboard/noticias/excluir/{id}', [NoticiaController::class, "destroy"])->name('admin.noticias.excluir');
 
     //Rotas do Gerenciamento de Categorias
