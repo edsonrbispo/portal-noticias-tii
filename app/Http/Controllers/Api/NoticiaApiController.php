@@ -32,7 +32,7 @@ class NoticiaApiController extends Controller
             'titulo' => 'required|min:10|max:255',
             'resumo' => 'required',
             'conteudo' => 'required',
-            'imagem' => 'required|image|mimes:jpge,jpg,png,webp|max:2048'
+            'imagem' => 'nullable|image|mimes:jpge,jpg,png,webp|max:2048'
         ]);
 
         $noticia = new Noticia();

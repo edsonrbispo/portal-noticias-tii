@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthApiController;
+use App\Http\Controllers\Api\CategoriaApiController;
 use App\Http\Controllers\Api\NoticiaApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -16,3 +17,5 @@ Route::post('/logout', [AuthApiController::class, 'logout'])->middleware('auth:s
 Route::apiResource('noticias', NoticiaApiController::class)->only(['index', 'show']);
 
 Route::apiResource('noticias',NoticiaApiController::class)->except(['index','show'])->middleware('auth:sanctum');
+
+Route::get('categorias',[CategoriaApiController::class, 'index']);
